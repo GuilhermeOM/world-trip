@@ -13,6 +13,8 @@ export const Header = () => {
       borderBottom="1px solid"
       borderColor="gray.200"
       align="center"
+      position="absolute"
+      bottom="100%"
     >
       <Image src={logo} alt="logo" style={{ margin: "0 auto" }} />
     </Flex>
