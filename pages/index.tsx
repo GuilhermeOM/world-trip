@@ -27,6 +27,7 @@ import "swiper/css/pagination";
 
 import home from "../styles/Home.module.css";
 import { TripOptions } from "../components/TripOptions";
+import { ContinentButton } from "../components/ContinentButton";
 
 export default function Home() {
   const isWideVersion = useBreakpointValue({
@@ -60,7 +61,9 @@ export default function Home() {
           <Center>
             <Stack textAlign="center">
               <Heading fontSize={["20px", "36px"]}>Vamos nessa?</Heading>
-              <Heading fontSize={["20px", "36px"]}>Então escolha seu continente</Heading>
+              <Heading fontSize={["20px", "36px"]}>
+                Então escolha seu continente
+              </Heading>
             </Stack>
           </Center>
 
@@ -74,150 +77,39 @@ export default function Home() {
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             >
               <SwiperSlide>
-                <Image
-                  src={europe}
-                  alt="europe"
-                  className={home.home_trip_img}
+                <ContinentButton
+                  image={europe}
+                  heading="Europa"
+                  text="O Continente mais antigo"
                 />
-                <Heading
-                  position="absolute"
-                  top="50%"
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["24px", "48px"]}
-                >
-                  Europa
-                </Heading>
-                <Text
-                  position="absolute"
-                  top={["40%", "50%"]}
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["14px", "24px"]}
-                  fontWeight="bold"
-                  textAlign="center"
-                  mt="16"
-                >
-                  O continente mais antigo
-                </Text>
               </SwiperSlide>
               <SwiperSlide>
-                <Image
-                  src={america}
-                  alt="america"
-                  className={home.home_trip_img}
+                <ContinentButton
+                  image={america}
+                  heading="América"
+                  text="O novo mundo"
                 />
-                <Heading
-                  position="absolute"
-                  top="50%"
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["24px", "48px"]}
-                >
-                  América
-                </Heading>
-                <Text
-                  position="absolute"
-                  top={["40%", "50%"]}
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["14px", "24px"]}
-                  fontWeight="bold"
-                  textAlign="center"
-                  mt="16"
-                >
-                  O novo mundo
-                </Text>
               </SwiperSlide>
               <SwiperSlide>
-                <Image
-                  src={africa}
-                  alt="africa"
-                  className={home.home_trip_img}
+                <ContinentButton
+                  image={africa}
+                  heading="Africa"
+                  text="Maior diversidade cultural"
                 />
-                <Heading
-                  position="absolute"
-                  top="50%"
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["24px", "48px"]}
-                >
-                  Africa
-                </Heading>
-                <Text
-                  position="absolute"
-                  top={["40%", "50%"]}
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["14px", "24px"]}
-                  fontWeight="bold"
-                  textAlign="center"
-                  mt="16"
-                >
-                  Maior diversidade cultural
-                </Text>
               </SwiperSlide>
               <SwiperSlide>
-                <Image src={asia} alt="asia" className={home.home_trip_img} />
-                <Heading
-                  position="absolute"
-                  top="50%"
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["24px", "48px"]}
-                >
-                  Ásia
-                </Heading>
-                <Text
-                  position="absolute"
-                  top={["40%", "50%"]}
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["14px", "24px"]}
-                  fontWeight="bold"
-                  textAlign="center"
-                  mt="16"
-                >
-                  O maior continente
-                </Text>
+                <ContinentButton
+                  image={asia}
+                  heading="Ásia"
+                  text="O maior continente"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
-                  src={oceania}
-                  alt="oceania"
-                  className={home.home_trip_img}
+                <ContinentButton
+                  image={asia}
+                  heading="Oceania"
+                  text="Maior diversidade de animais"
                 />
-                <Heading
-                  position="absolute"
-                  top="50%"
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["24px", "48px"]}
-                >
-                  Oceania
-                </Heading>
-                <Text
-                  position="absolute"
-                  top={["40%", "50%"]}
-                  left="50%"
-                  transform="translate(-50%, -50%)"
-                  color="whiteAlpha.900"
-                  fontSize={["14px", "24px"]}
-                  fontWeight="bold"
-                  textAlign="center"
-                  mt="16"
-                >
-                  Maior diversidade de animais
-                </Text>
               </SwiperSlide>
             </Swiper>
           </Box>
