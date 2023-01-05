@@ -1,3 +1,8 @@
+.home_trip_banner {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .home_trip_img {
   position: relative;
   width: 100%;
@@ -8,6 +13,18 @@
 
 .home_trip_img:hover {
   filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 600px) {
+  .home_trip_banner {
+    margin: 0 auto;
+    height: 163px;
+  }
+
+  .home_trip_img {
+    width: 100%;
+    height: 280px;
+  }
 }
 
 .home_trip_heading {

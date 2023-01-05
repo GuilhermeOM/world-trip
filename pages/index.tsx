@@ -48,7 +48,7 @@ export default function Home() {
           <Image
             src={isWideVersion ? banner : mBanner}
             alt="banner"
-            style={{ margin: "0 auto", width: "100%" }}
+            className={home.home_trip_banner}
           />
 
           <TripOptions />
@@ -59,8 +59,8 @@ export default function Home() {
 
           <Center>
             <Stack textAlign="center">
-              <Heading>Vamos nessa?</Heading>
-              <Heading>Então escolha seu continente</Heading>
+              <Heading fontSize={["20px", "36px"]}>Vamos nessa?</Heading>
+              <Heading fontSize={["20px", "36px"]}>Então escolha seu continente</Heading>
             </Stack>
           </Center>
 
@@ -85,17 +85,17 @@ export default function Home() {
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="48px"
+                  fontSize={["24px", "48px"]}
                 >
                   Europa
                 </Heading>
                 <Text
                   position="absolute"
-                  top="50%"
+                  top={["40%", "50%"]}
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="24px"
+                  fontSize={["14px", "24px"]}
                   fontWeight="bold"
                   textAlign="center"
                   mt="16"
@@ -115,17 +115,17 @@ export default function Home() {
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="48px"
+                  fontSize={["24px", "48px"]}
                 >
                   América
                 </Heading>
                 <Text
                   position="absolute"
-                  top="50%"
+                  top={["40%", "50%"]}
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="24px"
+                  fontSize={["14px", "24px"]}
                   fontWeight="bold"
                   textAlign="center"
                   mt="16"
@@ -145,17 +145,17 @@ export default function Home() {
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="48px"
+                  fontSize={["24px", "48px"]}
                 >
                   Africa
                 </Heading>
                 <Text
                   position="absolute"
-                  top="50%"
+                  top={["40%", "50%"]}
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="24px"
+                  fontSize={["14px", "24px"]}
                   fontWeight="bold"
                   textAlign="center"
                   mt="16"
@@ -171,17 +171,17 @@ export default function Home() {
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="48px"
+                  fontSize={["24px", "48px"]}
                 >
                   Ásia
                 </Heading>
                 <Text
                   position="absolute"
-                  top="50%"
+                  top={["40%", "50%"]}
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="24px"
+                  fontSize={["14px", "24px"]}
                   fontWeight="bold"
                   textAlign="center"
                   mt="16"
@@ -201,17 +201,17 @@ export default function Home() {
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="48px"
+                  fontSize={["24px", "48px"]}
                 >
                   Oceania
                 </Heading>
                 <Text
                   position="absolute"
-                  top="50%"
+                  top={["40%", "50%"]}
                   left="50%"
                   transform="translate(-50%, -50%)"
                   color="whiteAlpha.900"
-                  fontSize="24px"
+                  fontSize={["14px", "24px"]}
                   fontWeight="bold"
                   textAlign="center"
                   mt="16"
