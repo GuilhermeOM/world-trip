@@ -1,18 +1,18 @@
-import { SwiperSlide } from "swiper/react";
 import Image, { StaticImageData } from "next/image";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import home from "../styles/Home.module.css";
 
 interface SliderProps {
   image: StaticImageData;
+  alt: string;
   heading: string;
   text: string;
 }
 
-export const ContinentButton = ({ image, heading, text }: SliderProps) => {
+export const ContinentButton = ({ image, alt, heading, text }: SliderProps) => {
   return (
     <Box>
-      <Image src={image} alt="africa" className={home.home_trip_img} />
+      <Image src={image} alt={alt} className={home.home_trip_img} />
       <Heading
         position="absolute"
         top="50%"

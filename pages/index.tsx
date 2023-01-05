@@ -5,7 +5,6 @@ import {
   Center,
   Divider,
   Heading,
-  Text,
   Stack,
   useBreakpointValue,
 } from "@chakra-ui/react";
@@ -79,6 +78,7 @@ export default function Home() {
               <SwiperSlide>
                 <ContinentButton
                   image={europe}
+                  alt="Cidade europeia"
                   heading="Europa"
                   text="O Continente mais antigo"
                 />
@@ -86,6 +86,7 @@ export default function Home() {
               <SwiperSlide>
                 <ContinentButton
                   image={america}
+                  alt="Cidade Americana"
                   heading="América"
                   text="O novo mundo"
                 />
@@ -93,6 +94,7 @@ export default function Home() {
               <SwiperSlide>
                 <ContinentButton
                   image={africa}
+                  alt="Cidade Africana"
                   heading="Africa"
                   text="Maior diversidade cultural"
                 />
@@ -100,13 +102,15 @@ export default function Home() {
               <SwiperSlide>
                 <ContinentButton
                   image={asia}
+                  alt="Cidade Asiática"
                   heading="Ásia"
                   text="O maior continente"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <ContinentButton
-                  image={asia}
+                  image={oceania}
+                  alt="Cidade da Oceania"
                   heading="Oceania"
                   text="Maior diversidade de animais"
                 />
